@@ -54,7 +54,9 @@ const choice = getChoice();
 ```
 
 Then go to your terminal and run the following commands 
+```
 cd tiktok-downloader 
 node cli/index 
+```
 
 Now in your tiktok-downloader/downloads file you should see your downloaded videos.
