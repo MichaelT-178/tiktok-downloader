@@ -417,7 +417,7 @@ const getIdVideo = async (url) => {
             listVideo.push(url);
         }
     } else {
-        const urlInput = await getInput("Enter the URL: ");
+        const urlInput = await getInput("Paste the URL: ");
         
         for (const url of urlInput) {
             const resolvedUrl = await getRedirectUrl(url);
