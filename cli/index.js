@@ -417,12 +417,22 @@ const getIdVideo = async (url) => {
             listVideo.push(url);
         }
     } else {
-        const urlInput = await getInput("Paste the URL: ");
-        
-        for (const url of urlInput) {
-            const resolvedUrl = await getRedirectUrl(url);
-            listVideo.push(resolvedUrl);
-        }
+        const { default: clipboardy } = await import('clipboardy');
+
+        const getClipboardContent = async () => {
+            return clipboardy.read();
+        };
+
+        const urlInput = await getClipboardContent();
+        const resolvedUrl = await getRedirectUrl(urlInput);
+        listVideo.push(resolvedUrl);
+
+        // const urlInput = await getInput("Paste the URL: ");
+
+        // for (const url of urlInput) {
+        //     const resolvedUrl = await getRedirectUrl(url);
+        //     listVideo.push(resolvedUrl);
+        // }
     }
     
     console.log(chalk.green(`[!] Found ${listVideo.length} video`));
