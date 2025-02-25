@@ -27,7 +27,7 @@ cd Modern-Python-Files
 touch Tiktok_Downloader.py
 ```
 
-Go to this link -> [Here](https://github.com/MichaelT-178/Modern-Python-Files/blob/main/TikTok_Downloader.py) and copy the contents of the file into the Tiktok_Downloader.py file you just created.
+Go to this [link](https://github.com/MichaelT-178/Modern-Python-Files/blob/main/TikTok_Downloader.py) and copy the contents of the file into the Tiktok_Downloader.py file you just created.
 
 To run the Tiktok_Downloader.py file in terminal:
 
